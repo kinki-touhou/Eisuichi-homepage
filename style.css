@@ -1,6 +1,10 @@
+/*クラスは.（クラス名）から始める*/
 .logo img{
-    width: 80%;
+    width: 80%;/*px（ピクセル）でも画面に対する比率（％）でもオッケー*/
     height: auto;
+    /*指定した要素をブロックレベル要素として扱う。
+    （親要素の幅いっぱいに広がり、他の要素と横に並ばない。改行される。
+    width、height、margin、paddingといったプロパティを自由に指定できる）*/
     display: block;
     margin: 0 auto;
 
@@ -13,22 +17,24 @@
     display: block;
     margin: 0 auto;
 }
+/*redクラスのh1にのみ適用（のはずがなぜかできてない）*/
 .red h1{
     color: red;
-    text-align: center;
+    text-align: center; /*中央揃え*/
 }
 
+/*idは#から始める*/
 #redid{
     text-align: center;
 }
 
 .flexbox1 {
-    display: flex;
-    flex-direction:row ;
+    display: flex; /*要素を横並びや縦並びにする*/
+    flex-direction:row ; /*横並び（縦並びはcolumn）*/
 }
 
 .flexbox1 li{
-    margin-left: 8.0rem;
+    margin-left: 8.0rem; /*文字幅を確保できるよ*/
 }
 
 p{
