@@ -40,3 +40,39 @@
 p{
     font-size: 80%;
 }
+
+/* 以下、画像スライドショー用 */
+
+/* スライドショー全体のコンテナ */
+.swiper-container {
+    width: 100%; /* 横幅を親要素(katsudo_fukei)に合わせる */
+    max-width: 700px; /* スライドショーの最大幅を指定 */
+    margin: 20px auto; /* 上下に余白、左右は自動で中央揃え */
+}
+
+/* 各スライドの設定 */
+.swiper-slide {
+    text-align: center; /* 中のテキスト(pタグ)を中央揃え */
+    padding-bottom: 30px; /* 点々との間に余白を作る */
+}
+
+    /* スライド内の画像 */
+    .swiper-slide img {
+        width: 100%; /* 画像の幅をスライドに合わせる */
+        height: auto; /* 高さは自動調整 */
+        object-fit: cover; /* 画像の比率を保ったまま領域を埋める */
+        max-height: 500px; /* 画像が高くなりすぎないように制限 */
+    }
+
+/* 左右の矢印の色（デフォルトは青なので白に変更） */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffffff; /* 矢印の色を白に */
+}
+
+/* ページネーションの点々（デフォルトは青なので白に変更） */
+.swiper-pagination-bullet-active {
+    background: #ffffff; /* アクティブな点の色を白に */
+}
+
+/*ここまでスライドショー関連*/
